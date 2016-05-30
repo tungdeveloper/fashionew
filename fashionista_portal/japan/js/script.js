@@ -1,0 +1,20 @@
+$(document).ready(function(){
+	$('.icon-menu').click(function(){
+		$('.page').css({
+			'position':'relative',
+			'right':'-240px'
+		})
+		$('.sidebar-navigation').css({
+			'left':0
+		})
+	})
+	$('.close-btn').click(function(){
+		$('.page').css({
+			'position':'relative',
+			'right':'0'
+		})
+		$('.sidebar-navigation').css({
+			'left':'-240px'
+		})
+	})
+})
