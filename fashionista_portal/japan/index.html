@@ -13,6 +13,12 @@
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+
+	<link rel="stylesheet" href="js/slide/slick.css">
+	<link rel="stylesheet" href="js/slide/slick-theme.css">
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slide/slick.js"></script>
 	<title>JAPAN</title>
 </head>
 <body>
@@ -38,24 +44,48 @@
 					<h2>My Logo</h2>
 				</div>
 				<div class="wrap-icon">
-					<span class="search-icon"><i class="el el-search"></i></span>
-					<span class="favi-icon"><i class="el el-heart"></i></span>
+					<span class="search-icon" data-toggle="modal" data-target="#modalUI"><i class="el el-search"></i></span>
+					<span class="favi-icon hidden-xs" data-toggle="modal" data-target="#modalUI"><i class="el el-heart"></i></span>
 				</div>
 				<div class="clear"></div>
 			</div>	<!-- end header -->
+			<div class="modal fade" id="modalUI" tabindex="-1" role="dialog">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			      </div>
+			      <div class="modal-body">
+			        <img src="images-source/ui_sp_top_07.png" class="img-responsive" alt="">
+			      </div>
+
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
 
 			<div class="navigation-bar">
-				<ul class="second-navigation">
-					<li><a href="#">All</a></li>
-					<li><a href="#">Women</a></li>
-					<li><a href="#">Men</a></li>
-					<li><a href="#">Kids</a></li>
-					<li><a href="#">World <span class="arrow-down"><i class="glyphicon glyphicon-menu-down"></i></span></a></li>
+				<ul class="second-navigation hidden-xs">
+					<li class="active"><a href="#" data-name="#all">All</a></li>
+					<li><a href="#" data-name="#women">Women</a></li>
+					<li><a href="#" data-name="#men">Men</a></li>
+					<li><a href="#" data-name="#kid">Kids</a></li>
+					<li><a href="#" data-name="#world">World <span class="arrow-down"><i class="glyphicon glyphicon-menu-down"></i></span></a></li>
 				</ul>
+				<div class="slick-navigation visible-xs">
+					<div data-name="#all">All</div>
+					<div data-name="#women">Women</div>
+					<div data-name="#men">Men</div>
+					<div data-name="#kid">Men</div>
+					<div data-name="#world">World <span class="arrow-down"><i class="glyphicon glyphicon-menu-down"></i></div>
+				</div>
 			</div>	<!-- end navigation-bar-->
 
 			<div class="section-banner">
-				<img src="images/banner-jp.jpg" class="img-responsive" alt="Banner Name">
+				<img src="images/banner-jp.jpg" class="img-responsive" alt="Banner Name" id="all">
+				<img src="images/banner-jp2.jpg" class="img-responsive" alt="Banner Name" id="women">
+				<img src="images/banner-jp2.jpg" class="img-responsive" alt="Banner Name" id="men">
+				<img src="images/banner-jp2.jpg" class="img-responsive" alt="Banner Name" id="kid">
+				<img src="images/banner-jp2.jpg" class="img-responsive" alt="Banner Name" id="world">
 			</div>	<!-- end section banner -->
 
 
@@ -79,7 +109,131 @@
 							</div>
 						</div>	<!-- end top-section-->
 						<div class="bottom-section">
-							<div class="slick-slide">
+							<div class="slide-fashion" >
+								<div class="row">
+									<div class="col-sm-3">
+										<div class="wrap-img" >
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
 								<div class="row">
 									<div class="col-sm-3">
 										<div class="wrap-img">
@@ -142,81 +296,93 @@
 											</div>
 										</div>
 									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="wrap-img">
+											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
+											<div class="wrap-content">
+												<div class="row">
+													<div class="col-sm-8">
+														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
+													</div>
+													<div class="col-sm-4 text-right">
+														<span><i class="el el-heart el-sm red"></i> 12</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 
 								</div>
 
-								<div class="row">
-									<div class="col-sm-3">
-										<div class="wrap-img">
-											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
-											<div class="wrap-content">
-												<div class="row">
-													<div class="col-sm-8">
-														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
-													</div>
-													<div class="col-sm-4 text-right">
-														<span><i class="el el-heart el-sm red"></i> 12</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="wrap-img">
-											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
-											<div class="wrap-content">
-												<div class="row">
-													<div class="col-sm-8">
-														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
-													</div>
-													<div class="col-sm-4 text-right">
-														<span><i class="el el-heart el-sm red"></i> 12</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="wrap-img">
-											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
-											<div class="wrap-content">
-												<div class="row">
-													<div class="col-sm-8">
-														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
-													</div>
-													<div class="col-sm-4 text-right">
-														<span><i class="el el-heart el-sm red"></i> 12</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-3">
-										<div class="wrap-img">
-											<img src="images/product.jpg" class="img-responsive" alt="Product Name">
-											<div class="wrap-content">
-												<div class="row">
-													<div class="col-sm-8">
-														<span class="wrap-icon"><i class="el el-user"></i> ABC</span>
-													</div>
-													<div class="col-sm-4 text-right">
-														<span><i class="el el-heart el-sm red"></i> 12</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>	<!-- end slick-slide -->
 
 							<div class="show-more">
-								<p class="tex-show-more" >Show More</p>
+								<p class="tex-show-more" data-toggle="modal" data-target="#modalfashion" >Show More</p>
 							</div>
 						</div>	<!-- end bottom-section-->
 					</div>
 				</div>
 			</div>
 			<!-- END -->
+
+			<div class="modal fade" id="modalfashion" tabindex="-1" role="dialog">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			      </div>
+			      <div class="modal-body">
+			        <img src="images-source/ui_pc_new_01.png" class="img-responsive" alt="">
+			      </div>
+
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
 
 			<!-- SECTION -->
 			<div class="section" id="ranking">
@@ -471,11 +637,11 @@
 							<div class="row-product">
 								<div class="above">
 									<div class="row">
-										<div class="col-sm-6">
+										<div class="col-sm-6 col-xs-8">
 											<h4 class="title-product-group">Lorem ipsum dolor sit amet</h4>
 											<p class="sub-title-product-group">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 										</div>
-										<div class="col-sm-6">
+										<div class="col-sm-6 col-xs-4">
 											<div class="wrap-right-above-group">
 												<div class="inner-left inner">
 													<p class="text-inner">ABC</p>
@@ -513,95 +679,7 @@
 								</div>	<!-- end arrow -->
 							</div>	<!--row-product-->
 
-							<div class="row-product">
-								<div class="above">
-									<div class="row">
-										<div class="col-sm-6">
-											<h4 class="title-product-group">Lorem ipsum dolor sit amet</h4>
-											<p class="sub-title-product-group">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-										</div>
-										<div class="col-sm-6">
-											<div class="wrap-right-above-group">
-												<div class="inner-left inner">
-													<p class="text-inner">ABC</p>
-													<p class="nummber-inner">24</p>
-												</div>
-												<div class="inner-right inner">
-													<p class="text-inner">ABC</p>
-													<p class="nummber-inner">24</p>
-												</div>
-												<div class="clear"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="below">
-									<ul class="list-product-below">
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-									</ul>
-								</div>
-
-								<div class="wrap-arrow">
-									<div class="table">
-										<div class="table-cell">
-											<i class="glyphicon glyphicon-menu-right"></i>
-										</div>
-									</div>
-
-								</div>	<!-- end arrow -->
-							</div>	<!--row-product-->
-
-							<div class="row-product">
-								<div class="above">
-									<div class="row">
-										<div class="col-sm-6">
-											<h4 class="title-product-group">Lorem ipsum dolor sit amet</h4>
-											<p class="sub-title-product-group">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-										</div>
-										<div class="col-sm-6">
-											<div class="wrap-right-above-group">
-												<div class="inner-left inner">
-													<p class="text-inner">ABC</p>
-													<p class="nummber-inner">24</p>
-												</div>
-												<div class="inner-right inner">
-													<p class="text-inner">ABC</p>
-													<p class="nummber-inner">24</p>
-												</div>
-												<div class="clear"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="below">
-									<ul class="list-product-below">
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-										<li><img src="images/product-square.jpg" class="img-responsive" alt="Product Name"></li>
-									</ul>
-								</div>
-
-								<div class="wrap-arrow">
-									<div class="table">
-										<div class="table-cell">
-											<i class="glyphicon glyphicon-menu-right"></i>
-										</div>
-									</div>
-
-								</div>	<!-- end arrow -->
-							</div>	<!--row-product-->
+							
 
 							<div class="show-more">
 								<p class="tex-show-more" data-toggle="modal" data-target="#modalGroup">Show More</p>
@@ -687,69 +765,7 @@
 												<div class="row">
 													<div class="col-xs-4">
 														<div class="wrap-img">
-															<img src="images/product-square.jpg" class="img-responsive" alt="Product Name">
-														</div>
-													</div>
-													<div class="col-xs-4">
-														<div class="wrap-img">
-															<img src="images/product-square.jpg" class="img-responsive" alt="Product Name">
-														</div>
-													</div>
-													<div class="col-xs-4">
-														<div class="wrap-img">
-															<img src="images/product-square.jpg" class="img-responsive" alt="Product Name">
-														</div>
-													</div>
-												</div>
-
-												<div class="wrap-arrow">
-													<div class="table">
-														<div class="table-cell">
-															<i class="glyphicon glyphicon-menu-right"></i>
-														</div>
-													</div>
-
-												</div>	<!-- end arrow -->
-											</div>	<!-- end wrap-col -->
-										</div>
-										<div class="col-sm-6">
-											<div class="wrap-col">
-												<h3 class="title-product-cate">Lorem ipsum dolor sit amet</h3>
-												<div class="row">
-													<div class="col-xs-4">
-														<div class="wrap-img">
-															<img src="images/product-square.jpg" class="img-responsive" alt="Product Name">
-														</div>
-													</div>
-													<div class="col-xs-4">
-														<div class="wrap-img">
-															<img src="images/product-square.jpg" class="img-responsive" alt="Product Name">
-														</div>
-													</div>
-													<div class="col-xs-4">
-														<div class="wrap-img">
-															<img src="images/product-square.jpg" class="img-responsive" alt="Product Name">
-														</div>
-													</div>
-												</div>
-
-												<div class="wrap-arrow">
-													<div class="table">
-														<div class="table-cell">
-															<i class="glyphicon glyphicon-menu-right"></i>
-														</div>
-													</div>
-
-												</div>	<!-- end arrow -->
-											</div>	<!-- end wrap-col -->
-										</div>
-										<div class="col-sm-6">
-											<div class="wrap-col">
-												<h3 class="title-product-cate">Lorem ipsum dolor sit amet</h3>
-												<div class="row">
-													<div class="col-xs-4">
-														<div class="wrap-img">
-															<img src="images/product-square.jpg" class="img-responsive" alt="Product Name">
+															<img src="images/product-square.jpg" class="img-responsive" alt="Product Name" data-toggle="modal" data-target="#modalCatepDetail">
 														</div>
 													</div>
 													<div class="col-xs-4">
@@ -839,59 +855,7 @@
 											</div>
 										</div>
 										<div class="col-sm-6">
-											<div class="each-hashtag">
-												#hashtag
-												<div class="wrap-arrow">
-													<div class="table">
-														<div class="table-cell">
-															<i class="glyphicon glyphicon-menu-right"></i>
-														</div>
-													</div>
-
-												</div>	<!-- end arrow -->
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="each-hashtag">
-												#hashtag
-												<div class="wrap-arrow">
-													<div class="table">
-														<div class="table-cell">
-															<i class="glyphicon glyphicon-menu-right"></i>
-														</div>
-													</div>
-
-												</div>	<!-- end arrow -->
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="each-hashtag">
-												#hashtag
-												<div class="wrap-arrow">
-													<div class="table">
-														<div class="table-cell">
-															<i class="glyphicon glyphicon-menu-right"></i>
-														</div>
-													</div>
-
-												</div>	<!-- end arrow -->
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="each-hashtag">
-												#hashtag
-												<div class="wrap-arrow">
-													<div class="table">
-														<div class="table-cell">
-															<i class="glyphicon glyphicon-menu-right"></i>
-														</div>
-													</div>
-
-												</div>	<!-- end arrow -->
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="each-hashtag">
+											<div class="each-hashtag" data-toggle="modal" data-target="#modalHashtagDetail">
 												#hashtag
 												<div class="wrap-arrow">
 													<div class="table">
